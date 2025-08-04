@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>NIRANJAN CREATIONS</title>
+                <link rel="manifest" href="c.json">
+        </head>
+        <body style="background:linear-gradient(to right,lightblue,lightpink);color:navy;">
+                <marquee direction="right" behaviour="scroll" scrollamount="15" style="color:yellow;background-color:maroon;font-size:35px;" >NIRANJAN CREATIONS</marquee>
+<style>
+.rotate{
+        animation: spin  linear 2s infinite;
+}
+@keyframes spin{
+        0%{
+                transform:rotateY(0deg);
+        }
+        100%{
+                transform:rotateY(360deg);
+        }
+}
+</style>
+<center>
+        <img src="https://hacker1514.github.io/python/kni.png" width="100px" height="100px;" class=rotate style="border-radius:50%;border:solid lime;" >
+        <h1>ALL NIRANJAN CREATIONS ARE AVAILABLE HERE</h1>
+        <audio src="https://github.com/Niranjan164/COMPILER/raw/main/click-151673_073339.mp3" id="m"></audio>
+</center>
+<button onclick="install();"style="background-color:teal;color:lime;border:solid orange;font-size:20px;">INSTALL INTO YOUR SYSTEM</button>
+</br></br>
+<button onclick="python();"style="background-color:black;color:lime;font-size:20px;"><img src="https://hacker1514.github.io./pythonapp/python.png" width="80px" height="80px" style="border:solid red;"></br>INTREPTER</button>
+<button onclick="s();"style="background-color:black;color:lime;font-size:20px;"><img src="https://hacker1514.github.io/sqlapp/sql.png" width="80px" height="80px" style="border:solid cyan;"></br>KSQL</button>
+<script>
+        let music=document.getElementById("m");
+        let p;
+        window.addEventListener('beforeinstallprompt',e=>{
+                e.preventDefault();
+                p=e;
+        });
+        function install(){
+                music.play();
+                if(p){
+                        p.prompt();
+                }
+        }
+        if('serviceWorker' in navigator){
+                navigator.serviceWorker.register('c.js');
+        }
+                function python(){
+                music.play();
+                window.open("https://hacker1514.github.io/pythonapp/python.html","_self");
+        }
+        function s(){
+                music.play();
+                window.open("https://hacker1514.github.io./sqlapp/db.html","_self");
+        }
+</script>
+        </body>
+</html>
