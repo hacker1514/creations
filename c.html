@@ -7,11 +7,8 @@
         <body style="background:linear-gradient(to right,lightblue,lightpink);color:navy;">
                 <marquee direction="right" behaviour="scroll" scrollamount="15" style="color:yellow;background-color:maroon;font-size:35px;" >NIRANJAN CREATIONS</marquee>
 <style>
-.rotate{
-        animation: spin  linear 2s infinite;
-}
-@keyframes spin{                                                                                                       0%{
-                transform:rotateY(0deg);
+.rotate{                                                                                                         animation: spin  linear 2s infinite;                                                             }
+@keyframes spin{                                                                                                       0%{                                                                                                        transform:rotateY(0deg);
         }
         100%{
                 transform:rotateY(360deg);
@@ -31,6 +28,8 @@
 <button onclick="h();"style="background-color:black;color:lime;font-size:17px;"><img src="https://hacker1514.github.io/html/h.png" width="80px" height="80px" style="border:solid lime;"></br>HTML EDITOR</button>
 <button onclick="css();"style="background-color:black;color:lime;font-size:17px;"><img src="https://hacker1514.github.io/css/css.png" width="80px" height="80px" style="border:solid yellow;"></br>CSS EDITOR</button>
 <button onclick="j();"style="background-color:black;color:lime;font-size:17px;"><img src="https://hacker1514.github.io/js/js.png" width="80px" height="80px" style="border:solid cyan;"></br>JS EDITOR</button>
+<button onclick="d();"style="background-color:black;color:lime;font-size:17px;"><img src="https://hacker1
+514.github.io/ds/ds.png" width="80px" height="80px" style="border:solid red;"></br>B-TREE</button>
 <script>
         let music=document.getElementById("m");
         let p;
@@ -59,10 +58,24 @@
                 music.play();
                 window.open("https://hacker1514.github.io./sqlapp/db.html","_self");
         }
-        function h(){                                                                                                          music.play();                                                                                                  window.open("https://hacker1514.github.io./html/login.html","_self");                                   }
+        function h(){                                                                                                      
+                music.play();      
+                window.open("https://hacker1514.github.io./html/login.html","_self");                  
+        }
 
-        function j(){                                                                                                          music.play();                                                                                                  window.open("https://hacker1514.github.io./js/login.html","_self");                                   }
-        function css(){                                                                                                          music.play();                                                                                                  window.open("https://hacker1514.github.io./css/login.html","_self");                                   }
+        
+        function j(){    
+                music.play();  
+                window.open("https://hacker1514.github.io./js/login.html","_self");     
+        }
+        function css(){     
+                music.play();     
+                window.open("https://hacker1514.github.io./css/login.html","_self");  
+        }
+        function d(){
+                music.play();
+                window.open("https://hacker1514.github.io./ds/ds.html","_self");
+        }
 </script>
         </body>
 </html>
